@@ -1,0 +1,16 @@
+{
+  "name": "mysql-cdc-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+    "database.hostname": "localhost",
+    "database.port": "3306",
+    "database.user": "root",
+    "database.password": "rootpass",
+    "database.server.id": "85744",
+    "database.server.name": "dbserver1",
+    "database.include.list": "your_db",
+    "table.include.list": "your_table",
+    "database.history.kafka.bootstrap.servers": "localhost:9092",
+    "database.history.kafka.topic": "dbhistory.fullfillment"
+  }
+}
